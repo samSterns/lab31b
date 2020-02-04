@@ -14,11 +14,16 @@ class FuturamaApp extends Component {
         .then(quote => this.setState({ quote }));
     }
 
+    fetchQuote = () => {
+      getAllQuotes()
+        .then(quote => this.setState({ quote }));
+    }
+
     render() {
       const { quote } = this.state;
       return (
         <>
-          <button onClick={getAllQuotes}>Get New Quotes</button>
+          <button onClick={this.fetchQuote}>Get New Quotes</button>
           <QuoteList quote={quote} />
         </>
       );
