@@ -21,10 +21,11 @@ const FuturamaAppFn = () => {
       .then(character => setCharacter(character));
   };
 
-  const onSelect = (e) => { 
-    console.log(e.target.value);
-// using the set character function inside with the etarget . value 
+  const onSelect = ({ target }) => { 
+    event.preventDefault();
+    return setCharacter(target.value);
   };
+
 
   return (
     <>

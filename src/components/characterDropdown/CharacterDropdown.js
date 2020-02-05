@@ -6,7 +6,7 @@ export const CharacterDropdown = ({ onChange }) => {
     <select id="dropDown" onChange={onChange}> 
       <option value="Fry">Fry</option>
       <option value="Lela">Lela</option>
-      <option value="Bender">zydd</option>
+      <option value="Bender">Bender</option>
       <option value="Dr. Zoydberg">Dr. Zoyberg</option>
       <option value="Mom">Mom</option>
     </select>
