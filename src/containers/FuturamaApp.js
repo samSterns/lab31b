@@ -31,5 +31,4 @@ class FuturamaApp extends Component {
 
 }
 
-export default FuturamaApp
-;
+export default FuturamaApp;
