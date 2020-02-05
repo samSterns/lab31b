@@ -1,17 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const CharacterDropdown = ({ Character }) => {
+export const CharacterDropdown = ({ onChange }) => {
   return (
-    <select> 
-      <option value="characterName">{Character}</option>
+    <select id="dropDown" onChange={onChange}> 
+      <option value="Fry">Fry</option>
+      <option value="Lela">Lela</option>
+      <option value="Bender">zydd</option>
+      <option value="Dr. Zoydberg">Dr. Zoyberg</option>
+      <option value="Mom">Mom</option>
     </select>
-    
   );
-}
-;
-
+  
+};
 CharacterDropdown.propTypes = {
-  character: PropTypes.string
-}
-;
+  onChange: PropTypes.func.isRequired
+};
+
